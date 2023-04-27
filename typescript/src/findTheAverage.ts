@@ -5,5 +5,5 @@ function findTheAverage(inputArray: number[]): number {
   return averageNumbers;
 }
 
-const numbers: number[] = [1, 2, 3, 4, 5, 6];
-console.log(findTheAverage(numbers));
+const myNumbers: number[] = [1, 2, 3, 4, 5, 6];
+console.log(findTheAverage(myNumbers));
