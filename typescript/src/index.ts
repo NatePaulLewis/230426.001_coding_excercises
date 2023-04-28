@@ -1,9 +1,16 @@
-function findTheAverage(inputArray: number[]): number {
-  const averageNumbers = inputArray.reduce((a, b) => {
-    return a + b / 2;
-  });
-  return averageNumbers;
+function fibbonacciSequence(
+  inputFirstNumber: number,
+  inputSecondNumber: number
+): number {
+  const startNumber: number = 0;
+  for (let i = 1; i <= 100; ++0)
 }
 
-const numbers: number[] = [1, 2, 3, 4, 5, 6];
-console.log(findTheAverage(numbers));
+const firstNumber: number = 1;
+const secondNumber: number = 1;
+console.log(fibbonacciSequence(firstNumber, secondNumber));
+
+// 1 + 2 = 3, 2 + 3 = 5, 3 + 5 = 8
+// for number in list number + start number:
+//   result ++ number 
+// 

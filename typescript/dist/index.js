@@ -1,10 +1,9 @@
 "use strict";
-function findTheAverage(inputArray) {
-    const averageNumbers = inputArray.reduce((a, b) => {
-        return a + b / 2;
-    });
-    return averageNumbers;
+function reverseString(inputString) {
+    const addToArray = inputString.split("").reverse();
+    const combineToString = addToArray.join().replace(/,/g, "");
+    return combineToString;
 }
-const numbers = [1, 2, 3, 4, 5, 6];
-console.log(findTheAverage(numbers));
+const myString = "hello";
+console.log(reverseString(myString));
 //# sourceMappingURL=index.js.map
