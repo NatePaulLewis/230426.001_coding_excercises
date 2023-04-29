@@ -1,9 +1,17 @@
 "use strict";
-function reverseString(inputString) {
-    const addToArray = inputString.split("").reverse();
-    const combineToString = addToArray.join().replace(/,/g, "");
-    return combineToString;
+function fizzBuzz(startingNumber, endingNumber) {
+    for (let i = startingNumber; i <= endingNumber; ++i) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("FizzBuzz");
+        }
+        else if (i % 5 === 0) {
+            console.log("Buzz");
+        }
+        else if (i % 3 === 0) {
+            console.log("Fizz");
+        }
+    }
+    return "Not either.";
 }
-const myString = "hello";
-console.log(reverseString(myString));
+fizzBuzz(0, 100);
 //# sourceMappingURL=index.js.map
