@@ -1,16 +1,14 @@
-// FizzBuzz: Write a program that prints the numbers from 1 to 100. For multiples of three, print "Fizz" instead of the number, and for multiples of five, print "Buzz". For numbers that are multiples of both three and five, print "FizzBuzz".
+const tryThisString: string = "Hi my name is nathanael lewis";
 
-function fizzBuzz(startingNumber: number, endingNumber: number): string {
-  for (let i = startingNumber; i <= endingNumber; ++i) {
-    if (i % 3 === 0 && i % 5 === 0) {
-      console.log("FizzBuzz");
-    } else if (i % 5 === 0) {
-      console.log("Buzz");
-    } else if (i % 3 === 0) {
-      console.log("Fizz");
-    }
+const initializeFunction = reverseSTring(tryThisString);
+console.log(initializeFunction);
+
+function reverseSTring(inputString: string): string {
+  const addLetters: string[] = [];
+
+  for (let letter of inputString) {
+    addLetters.push(letter);
   }
-  return "Not either.";
+  const onReverse = addLetters.reverse().join("");
+  return onReverse;
 }
-
-fizzBuzz(0, 100);

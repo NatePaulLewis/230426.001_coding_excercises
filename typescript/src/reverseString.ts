@@ -5,4 +5,4 @@ function reverseString(inputString: string): string {
 }
 
 const myString: string = "hello";
-console.log(reverseString(myString));
+console.log(reverseString(tryThisString));

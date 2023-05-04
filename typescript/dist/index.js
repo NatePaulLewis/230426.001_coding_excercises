@@ -1,17 +1,13 @@
 "use strict";
-function fizzBuzz(startingNumber, endingNumber) {
-    for (let i = startingNumber; i <= endingNumber; ++i) {
-        if (i % 3 === 0 && i % 5 === 0) {
-            console.log("FizzBuzz");
-        }
-        else if (i % 5 === 0) {
-            console.log("Buzz");
-        }
-        else if (i % 3 === 0) {
-            console.log("Fizz");
-        }
+const tryThisString = "Hi my name is nathanael lewis";
+const initializeFunction = reverseSTring(tryThisString);
+console.log(initializeFunction);
+function reverseSTring(inputString) {
+    const addLetters = [];
+    for (let letter of inputString) {
+        addLetters.push(letter);
     }
-    return "Not either.";
+    const onReverse = addLetters.reverse().join("");
+    return onReverse;
 }
-fizzBuzz(0, 100);
 //# sourceMappingURL=index.js.map
